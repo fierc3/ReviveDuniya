@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using System.Runtime.InteropServices;
 using System;
@@ -54,10 +53,6 @@ public class GameManagerScript : MonoBehaviour
     public Color equatorColor; // gradiente do modo default
     public Color groundColor; // gradiente do modo default
     public Color flatColor; // cor unica que ilumina a cena do modo dust
-    public PostProcessVolume volume; // post-processing
-    private AmbientOcclusion ambientOcclusionLayer = null; // recebe o ambiente occlusion do post-processing
-    private ColorGrading colorGradingLayer = null; // recebe o colorGrading do post-processing
-    private MotionBlur motionBlur = null;
 
     // Skybox materials
     public Material dustSkybox; // skybox laranja da dust
@@ -218,6 +213,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void SetEnvironmentLighting()
     {
+        /*
         volume.profile.TryGetSettings(out ambientOcclusionLayer);
         volume.profile.TryGetSettings(out colorGradingLayer);
 
@@ -254,7 +250,7 @@ public class GameManagerScript : MonoBehaviour
             colorGradingLayer.mixerRedOutRedIn.value = 100f;
             colorGradingLayer.mixerBlueOutRedIn.value = 0f;
             colorGradingLayer.mixerGreenOutRedIn.value = 0f;
-        }
+        }*/
 
     }
 
@@ -290,6 +286,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void CheckMotionBlur()
     {
+        /*
         if (PlayerPrefs.GetInt("MotionBlur") == 1)
         {
             if (motionBlur == null) volume.profile.TryGetSettings(out motionBlur);
@@ -300,6 +297,7 @@ public class GameManagerScript : MonoBehaviour
             if (motionBlur == null) volume.profile.TryGetSettings(out motionBlur);
             motionBlur.active = false;
         }
+        */
     }
 
     public void CheckMusicState() // chamado pelo botao na tela de configuracoes

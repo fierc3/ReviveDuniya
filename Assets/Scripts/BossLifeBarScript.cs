@@ -5,7 +5,6 @@ using System.Runtime.InteropServices;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class BossLifeBarScript : MonoBehaviour

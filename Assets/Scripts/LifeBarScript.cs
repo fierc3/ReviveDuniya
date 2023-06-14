@@ -4,7 +4,6 @@ using System.Runtime.InteropServices;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class LifeBarScript : MonoBehaviour
@@ -23,8 +22,6 @@ public class LifeBarScript : MonoBehaviour
     private float waitTime = 1.5f;
 
     public GameObject youDiedScreen;
-    private ColorGrading colorGradingLayer = null;
-
 
     private bool SloDownTime;
     private float journeyLength = 15;
@@ -43,9 +40,6 @@ public class LifeBarScript : MonoBehaviour
         lifeBar.rectTransform.sizeDelta = new Vector2(life * 100, 25);
         lifeFullBar.rectTransform.sizeDelta = new Vector2(life * 100, 25);
         animController = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<HumanAnimationController>();
-
-        PostProcessVolume volume = Camera.main.GetComponent<PostProcessVolume>();
-        volume.profile.TryGetSettings(out colorGradingLayer);
 
         gameManager.playerIsDead = false;
     }
@@ -76,7 +70,7 @@ public class LifeBarScript : MonoBehaviour
 
         if (animController.IsDead())
         {
-            colorGradingLayer.saturation.value = Mathf.Lerp(colorGradingLayer.saturation.value, -100, 1 * Time.deltaTime);
+           // colorGradingLayer.saturation.value = Mathf.Lerp(colorGradingLayer.saturation.value, -100, 1 * Time.deltaTime);
             youDiedScreen.GetComponent<CanvasGroup>().alpha = Mathf.Lerp(youDiedScreen.GetComponent<CanvasGroup>().alpha, 1, 0.5f * Time.deltaTime);
         }
     }
