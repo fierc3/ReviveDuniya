@@ -92,7 +92,6 @@ public class BuildInteractable : MonoBehaviour, PlayerInteractable
 
         if (other.gameObject.tag == "Player" && !isInInteraction)
         {
-            Debug.Log("pum2 EXIT TRIGGERED");
             playerInRange = false;
             intercationUi.SetActive(false);
         }
@@ -100,7 +99,6 @@ public class BuildInteractable : MonoBehaviour, PlayerInteractable
 
     public void FinishInteraction()
     {
-        Debug.Log("pum2 FINISH TRIGGERED");
         intercationUi.SetActive(false);
         playerControllerObject.GetComponent<PlayerController>().enabled = true;
         playerControllerObject.GetComponent<Rigidbody>().isKinematic = false;

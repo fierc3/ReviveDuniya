@@ -48,7 +48,6 @@ namespace Assets.Scripts
             lock (lockObject)
             {
                 inventoryList.Add(item);
-                Debug.Log("pum2 ab " + inventoryList.Count());
                 OnInventoryChange?.Invoke(inventoryList);
             }
         }
