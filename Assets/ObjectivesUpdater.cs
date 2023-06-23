@@ -21,13 +21,12 @@ public class ObjectivesUpdater : MonoBehaviour
 
     private void UpdateInventory(List<InventoryItem> items)
     {
-        /*
+        /*  
             Collect Cobblestone [stone] / [stoneMax]
             Collect Wood [wood] / [woodMax]
             Collect Water [water] / [watermax]
             Build farm!
          */
-        Debug.Log("pum2 aaa");
         objectivesText.text = template.Replace("[stone]", items.Where(x => x == InventoryItem.Cobble).Count() + "")
         .Replace("[wood]", items.Where(x => x == InventoryItem.Wood).Count() + "")
         .Replace("[water]", items.Where(x => x == InventoryItem.Water).Count() + "")
@@ -43,6 +42,6 @@ public class ObjectiveLevel1
 {
     public static int MIN_WATER = 1;
     public static int MIN_WOOD = 4;
-    public static int MIN_COBBLE = 7;
+    public static int MIN_COBBLE = 24;
     public static int MIN_SEEDS = 1;
 }
