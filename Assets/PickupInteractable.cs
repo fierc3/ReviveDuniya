@@ -40,12 +40,7 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
         startText = $"<{InputManager.interactKeyboard.ToString()}> {startText}";
         actionDescription = actionDescription.Replace("{x}", Inventory.GetInventoryDescripton(pickUpItem));
         interactionBox = GetComponent<BoxCollider>();
-        if(intercationUi == null)
-        {
-            intercationUi = InteractionUISingleton.Instance.gameObject;
-        }
 
-        interactionTextUi = intercationUi.GetComponentInChildren<Text>();
         playerControllerObject = GameObject.FindGameObjectWithTag("PlayerController");
         humanAnim = playerControllerObject.GetComponent<HumanAnimationController>();
     }
@@ -53,6 +48,12 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
     // Update is called once per frame
     void Update()
     {
+        if (intercationUi == null)
+        {
+            intercationUi = InteractionUISingleton.Instance.gameObject;
+            interactionTextUi = intercationUi.GetComponentInChildren<Text>();
+        }
+
         if (isHeld)
         {
             this.gameObject.transform.position = holdPos.transform.position;
