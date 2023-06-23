@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
@@ -8,7 +9,10 @@ namespace Assets.Scripts
 {
     public class Inventory : MonoBehaviour
     {
-        private static List<InventoryItem> myList = new List<InventoryItem>();
+
+        public static event Action<List<InventoryItem>> OnInventoryChange = delegate { };
+
+        private static List<InventoryItem> inventoryList = new List<InventoryItem>();
         private static object lockObject = new object();
 
         private static Inventory instance;
@@ -43,8 +47,9 @@ namespace Assets.Scripts
         {
             lock (lockObject)
             {
-                myList.Add(item);
-                //call event
+                inventoryList.Add(item);
+                Debug.Log("pum2 ab " + inventoryList.Count());
+                OnInventoryChange?.Invoke(inventoryList);
             }
         }
 
@@ -52,15 +57,21 @@ namespace Assets.Scripts
         {
             lock (lockObject)
             {
-                myList.Remove(item);
+                inventoryList.Remove(item);
+                OnInventoryChange?.Invoke(inventoryList);
             }
+        }
+
+        public int CountOfItem(InventoryItem item)
+        {
+            return inventoryList.Where(x => x == item).Count();
         }
 
         public  bool ContainsItem(InventoryItem item)
         {
             lock (lockObject)
             {
-                return myList.Contains(item);
+                return inventoryList.Contains(item);
             }
         }
 
@@ -72,7 +83,7 @@ namespace Assets.Scripts
             {
                 lock (lockObject)
                 {
-                    return myList.Count;
+                    return inventoryList.Count;
                 }
             }
         }

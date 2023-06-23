@@ -41,6 +41,11 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
         actionDescription = actionDescription.Replace("{x}", Inventory.GetInventoryDescripton(pickUpItem));
         interactionBox = GetComponent<BoxCollider>();
 
+        if(intercationUi != null)
+        {
+            interactionTextUi = intercationUi.GetComponentInChildren<Text>();
+        }
+
         playerControllerObject = GameObject.FindGameObjectWithTag("PlayerController");
         humanAnim = playerControllerObject.GetComponent<HumanAnimationController>();
     }
@@ -48,11 +53,6 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
     // Update is called once per frame
     void Update()
     {
-        if (intercationUi == null)
-        {
-            intercationUi = InteractionUISingleton.Instance.gameObject;
-            interactionTextUi = intercationUi.GetComponentInChildren<Text>();
-        }
 
         if (isHeld)
         {
@@ -69,6 +69,12 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
 
     private void OnTriggerEnter(Collider other)
     {
+        if (intercationUi == null)
+        {
+            intercationUi = InteractionUISingleton.Instance.gameObject;
+            interactionTextUi = intercationUi.GetComponentInChildren<Text>();
+        }
+
         if (humanAnim.IsDriving() || isInInteraction) return;
 
         if (other.gameObject.tag == "Player")
