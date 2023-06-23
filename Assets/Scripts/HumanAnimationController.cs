@@ -33,6 +33,12 @@ public class HumanAnimationController : MonoBehaviour
         animator.SetTrigger("Drink");
     }
 
+    public void PickUp()
+    {
+        animator.SetTrigger("PickingUp");
+    }
+
+
     public void DoDodge()
     {
         animator.SetTrigger("Dodge");

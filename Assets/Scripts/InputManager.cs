@@ -41,7 +41,7 @@ public class InputManager : MonoBehaviour
     public static KeyCode pauseJoystick = KeyCode.Joystick1Button7;
     public static KeyCode pausePS4 = KeyCode.Joystick1Button8;
 
-    public static KeyCode interaceKeyboard = KeyCode.E;
+    public static KeyCode interactKeyboard = KeyCode.E;
 
 
     private static bool triggerPressed = false;
@@ -62,7 +62,7 @@ public class InputManager : MonoBehaviour
         return Input.GetKeyDown(dodgeKeyboard) || Input.GetKeyDown(dodgeJoystick);
     }
 
-    public static bool GetInteract() => Input.GetKeyDown(interaceKeyboard);
+    public static bool GetInteract() => Input.GetKeyDown(interactKeyboard);
 
     public static bool GetEstusInput()
     {

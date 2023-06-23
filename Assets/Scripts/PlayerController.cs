@@ -217,7 +217,6 @@ private void Move()
                     originPos.y += 3f;
                     if (Physics.Raycast(originPos, Vector3.down, out floorHit, 10f, groundLayer))
                     {
-                        Debug.Log("GO TO FLOOR" + floorHit.transform.position.y);
                         var pos = model.position;
                         pos.y = floorHit.transform.position.y;
                         model.position = pos;

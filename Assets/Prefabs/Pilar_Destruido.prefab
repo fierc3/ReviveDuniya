@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 318756738456036802}
   - component: {fileID: 8609107100900495132}
   - component: {fileID: 2986321372622721644}
+  - component: {fileID: 5217837681751518133}
+  - component: {fileID: 6723866812064301766}
   m_Layer: 0
   m_Name: Pilar.046
   m_TagString: Untagged
@@ -32,6 +34,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000029802322, y: 0.00000023841858, z: 0.000000029802322}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 22
@@ -55,10 +58,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -83,6 +88,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036803
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -226,6 +232,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5217837681751518133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805239894298238311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &6723866812064301766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805239894298238311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0049999994, y: 0.0050813193, z: -0.010333762}
 --- !u!1 &1052303498728523461
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +278,8 @@ GameObject:
   - component: {fileID: 318756738456036766}
   - component: {fileID: 4087074756980192614}
   - component: {fileID: 874313238387766977}
+  - component: {fileID: 4416180644213678535}
+  - component: {fileID: 9195325868309988020}
   m_Layer: 0
   m_Name: Pilar.000
   m_TagString: Untagged
@@ -258,6 +297,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.5750822, y: 0.5750822, z: 0.5750822}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 0
@@ -281,10 +321,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -309,6 +351,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036767
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -452,6 +495,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4416180644213678535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052303498728523461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &9195325868309988020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052303498728523461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.000059512444, y: -0.000044464126, z: 0.001612328}
 --- !u!1 &1284603777556090238
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +541,8 @@ GameObject:
   - component: {fileID: 318756738456036836}
   - component: {fileID: 124065143282297815}
   - component: {fileID: 6101385353361251141}
+  - component: {fileID: 1617790978939187110}
+  - component: {fileID: 8135441491684291924}
   m_Layer: 0
   m_Name: Pilar.004
   m_TagString: Untagged
@@ -484,6 +560,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 3
@@ -507,10 +584,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -535,6 +614,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -678,6 +758,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1617790978939187110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284603777556090238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &8135441491684291924
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284603777556090238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.004056651, y: 0.0065266294, z: 0.0038133168}
 --- !u!1 &1407226818756528782
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +804,8 @@ GameObject:
   - component: {fileID: 318756738456036828}
   - component: {fileID: 1302971242181989743}
   - component: {fileID: 6554182963759938781}
+  - component: {fileID: 6409427711972922498}
+  - component: {fileID: 692564258514571175}
   m_Layer: 0
   m_Name: Pilar.055
   m_TagString: Untagged
@@ -710,6 +823,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.000000014901161, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 31
@@ -733,10 +847,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -761,6 +877,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036829
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -904,6 +1021,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6409427711972922498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407226818756528782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &692564258514571175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407226818756528782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.00007364759, y: -0.0018925413, z: -0.015568886}
 --- !u!1 &1565509689204796315
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +1067,8 @@ GameObject:
   - component: {fileID: 318756738456036804}
   - component: {fileID: 1373041916942369360}
   - component: {fileID: 4451870861578002954}
+  - component: {fileID: 8295037789456234358}
+  - component: {fileID: 3987709432993737528}
   m_Layer: 0
   m_Name: Pilar.020
   m_TagString: Untagged
@@ -936,6 +1086,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000014901161, y: -0.00000023841858, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 19
@@ -959,10 +1110,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -987,6 +1140,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1130,6 +1284,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8295037789456234358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565509689204796315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &3987709432993737528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565509689204796315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0029412806, y: 0.003051897, z: 0.009823654}
 --- !u!1 &1572003846967638268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1330,8 @@ GameObject:
   - component: {fileID: 318756738456036760}
   - component: {fileID: 6595617748211393922}
   - component: {fileID: 2113984545279825641}
+  - component: {fileID: 2399189332386609362}
+  - component: {fileID: 4515480578949122949}
   m_Layer: 0
   m_Name: Pilar.002
   m_TagString: Untagged
@@ -1162,6 +1349,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 1
@@ -1185,10 +1373,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1213,6 +1403,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036761
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1356,6 +1547,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2399189332386609362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572003846967638268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4515480578949122949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572003846967638268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.00047168508, y: -0.0022534053, z: 0.0025296025}
 --- !u!1 &1737547006207022971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,6 +1593,8 @@ GameObject:
   - component: {fileID: 318756738456036846}
   - component: {fileID: 514899055725276256}
   - component: {fileID: 398999457050793745}
+  - component: {fileID: 3140655805368770222}
+  - component: {fileID: 2475471148209725654}
   m_Layer: 0
   m_Name: Pilar.009
   m_TagString: Untagged
@@ -1388,6 +1612,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 8
@@ -1411,10 +1636,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1439,6 +1666,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1582,6 +1810,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3140655805368770222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737547006207022971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &2475471148209725654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737547006207022971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0, y: 0.000082264174, z: 0.005748729}
 --- !u!1 &2069408090924306940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,6 +1856,8 @@ GameObject:
   - component: {fileID: 318756738456036646}
   - component: {fileID: 6836210103936211295}
   - component: {fileID: 7125954810103645959}
+  - component: {fileID: 7875577563048726858}
+  - component: {fileID: 8158040418464392363}
   m_Layer: 0
   m_Name: Pilar.060
   m_TagString: Untagged
@@ -1614,6 +1875,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0.000000029802322}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 36
@@ -1637,10 +1899,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1665,6 +1929,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1808,6 +2073,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7875577563048726858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069408090924306940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &8158040418464392363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069408090924306940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.00047168508, y: -0.0021720966, z: -0.01769803}
 --- !u!1 &2096351588224947746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,6 +2119,8 @@ GameObject:
   - component: {fileID: 318756738456036850}
   - component: {fileID: 6797206193333708840}
   - component: {fileID: 1070099179642778262}
+  - component: {fileID: 8690352788023813914}
+  - component: {fileID: 5940812123043216292}
   m_Layer: 0
   m_Name: Pilar.015
   m_TagString: Untagged
@@ -1840,6 +2138,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 14
@@ -1863,10 +2162,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1891,6 +2192,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2034,6 +2336,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8690352788023813914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096351588224947746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &5940812123043216292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096351588224947746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.004999999, y: 5.0030075e-16, z: 0.008801382}
 --- !u!1 &2248204455751690659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,6 +2382,8 @@ GameObject:
   - component: {fileID: 318756738456036640}
   - component: {fileID: 8173867838210983722}
   - component: {fileID: 3530879037389061548}
+  - component: {fileID: 4902397747879103697}
+  - component: {fileID: 4350738280627307795}
   m_Layer: 0
   m_Name: Pilar.061
   m_TagString: Untagged
@@ -2066,6 +2401,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 37
@@ -2089,10 +2425,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2117,6 +2455,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2260,6 +2599,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4902397747879103697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248204455751690659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4350738280627307795
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248204455751690659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.000059512444, y: 0.00003684312, z: -0.018615305}
 --- !u!1 &2274096350623336630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,6 +2657,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 38
@@ -2402,6 +2773,8 @@ GameObject:
   - component: {fileID: 318756738456036806}
   - component: {fileID: 8461029970050873335}
   - component: {fileID: 6431346076344559996}
+  - component: {fileID: 2436031520755588775}
+  - component: {fileID: 834656012132477347}
   m_Layer: 0
   m_Name: Pilar.040
   m_TagString: Untagged
@@ -2419,6 +2792,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000029802322, y: 0, z: 0.000000029802322}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 20
@@ -2442,10 +2816,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2470,6 +2846,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036807
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2613,6 +2990,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2436031520755588775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2279421825682655054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &834656012132477347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2279421825682655054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0043617995, y: -0.0049186805, z: -0.010652236}
 --- !u!1 &2386718980333787076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,6 +3036,8 @@ GameObject:
   - component: {fileID: 318756738456036824}
   - component: {fileID: 7758618324661416885}
   - component: {fileID: 6662458269976294456}
+  - component: {fileID: 925250204572379124}
+  - component: {fileID: 232572134198836584}
   m_Layer: 0
   m_Name: Pilar.057
   m_TagString: Untagged
@@ -2645,6 +3055,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0.000000059604645}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 33
@@ -2668,10 +3079,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2696,6 +3109,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036825
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2839,6 +3253,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &925250204572379124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2386718980333787076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &232572134198836584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2386718980333787076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0084030535, y: -0.008157554, z: -0.015364815}
 --- !u!1 &2727847390033111034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,6 +3299,8 @@ GameObject:
   - component: {fileID: 318756738456036644}
   - component: {fileID: 4824068591130263843}
   - component: {fileID: 3707302604031177585}
+  - component: {fileID: 1057652384785372251}
+  - component: {fileID: 8470008047129577621}
   m_Layer: 0
   m_Name: Pilar.059
   m_TagString: Untagged
@@ -2871,6 +3318,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0.00000047683716, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 35
@@ -2894,10 +3342,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2922,6 +3372,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036645
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3065,6 +3516,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1057652384785372251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727847390033111034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &8470008047129577621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727847390033111034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0028370991, y: 0.00008131005, z: -0.017431114}
 --- !u!1 &4214702625258801817
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,6 +3562,8 @@ GameObject:
   - component: {fileID: 318756738456036800}
   - component: {fileID: 364538385233402761}
   - component: {fileID: 8713689579778266916}
+  - component: {fileID: 7848655917617515861}
+  - component: {fileID: 473392375492948250}
   m_Layer: 0
   m_Name: Pilar.045
   m_TagString: Untagged
@@ -3097,6 +3581,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000029802322, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 21
@@ -3120,10 +3605,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3148,6 +3635,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036801
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3291,6 +3779,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7848655917617515861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214702625258801817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &473392375492948250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214702625258801817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0033482276, y: -0.0037536903, z: -0.011125084}
 --- !u!1 &4262667609934594739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,6 +3825,8 @@ GameObject:
   - component: {fileID: 318756738456036852}
   - component: {fileID: 2007248785548251383}
   - component: {fileID: 5547860507080553986}
+  - component: {fileID: 588551577781348218}
+  - component: {fileID: 8357214513820272703}
   m_Layer: 0
   m_Name: Pilar.012
   m_TagString: Untagged
@@ -3323,6 +3844,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 11
@@ -3346,10 +3868,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3374,6 +3898,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036853
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3517,6 +4042,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &588551577781348218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262667609934594739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &8357214513820272703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262667609934594739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0013695878, y: -0.0002566366, z: 0.0077016326}
 --- !u!1 &4595688911060499563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,6 +4088,8 @@ GameObject:
   - component: {fileID: 318756738456036848}
   - component: {fileID: 403886959314578144}
   - component: {fileID: 9129224702824659149}
+  - component: {fileID: 3464704469229205460}
+  - component: {fileID: 4753200205964743830}
   m_Layer: 0
   m_Name: Pilar.014
   m_TagString: Untagged
@@ -3549,6 +4107,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 13
@@ -3572,10 +4131,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3600,6 +4161,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036849
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3743,6 +4305,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3464704469229205460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595688911060499563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4753200205964743830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595688911060499563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0023059016, y: 0.00024311892, z: 0.008491479}
 --- !u!1 &4702206858803572461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,6 +4351,8 @@ GameObject:
   - component: {fileID: 318756738456036854}
   - component: {fileID: 751223552605321710}
   - component: {fileID: 9020074681356704622}
+  - component: {fileID: 9075938434367110541}
+  - component: {fileID: 1320644710107917536}
   m_Layer: 0
   m_Name: Pilar.013
   m_TagString: Untagged
@@ -3775,6 +4370,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 12
@@ -3798,10 +4394,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3826,6 +4424,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3969,6 +4568,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9075938434367110541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702206858803572461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &1320644710107917536
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702206858803572461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0002566371, y: 4.0548785e-16, z: 0.0071334164}
 --- !u!1 &4966300745072607233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,6 +4614,8 @@ GameObject:
   - component: {fileID: 318756738456036818}
   - component: {fileID: 3301467201923834335}
   - component: {fileID: 3579447147773791868}
+  - component: {fileID: 1229774399258949303}
+  - component: {fileID: 7141612539012067641}
   m_Layer: 0
   m_Name: Pilar.054
   m_TagString: Untagged
@@ -4001,6 +4633,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000029802322, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 30
@@ -4024,10 +4657,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4052,6 +4687,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4195,6 +4831,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1229774399258949303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4966300745072607233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &7141612539012067641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4966300745072607233}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.003526941, y: 0.0048116436, z: -0.015825283}
 --- !u!1 &5137811615791531138
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,6 +4877,8 @@ GameObject:
   - component: {fileID: 318756738456036858}
   - component: {fileID: 6043253511885395195}
   - component: {fileID: 2012285806203673312}
+  - component: {fileID: 8547310645039987222}
+  - component: {fileID: 6274707176218093824}
   m_Layer: 0
   m_Name: Pilar.019
   m_TagString: Untagged
@@ -4227,6 +4896,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 18
@@ -4250,10 +4920,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4278,6 +4950,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036859
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4421,6 +5094,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8547310645039987222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5137811615791531138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &6274707176218093824
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5137811615791531138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0036212248, y: -0.0049999994, z: 0.009684231}
 --- !u!1 &5183409529342176067
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,6 +5140,8 @@ GameObject:
   - component: {fileID: 318756738456036820}
   - component: {fileID: 7353159976718216267}
   - component: {fileID: 7530710622346864995}
+  - component: {fileID: 8056717994664735831}
+  - component: {fileID: 1743483308487269080}
   m_Layer: 0
   m_Name: Pilar.051
   m_TagString: Untagged
@@ -4453,6 +5159,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.000000029802322, y: 0, z: -0.000000014901161}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 27
@@ -4476,10 +5183,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4504,6 +5213,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036821
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4647,6 +5357,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8056717994664735831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183409529342176067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &1743483308487269080
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183409529342176067}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0049999994, y: 0.002043798, z: -0.014468983}
 --- !u!1 &5294789235161696022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,6 +5403,8 @@ GameObject:
   - component: {fileID: 318756738456036816}
   - component: {fileID: 3401249222416712060}
   - component: {fileID: 4154149756189999767}
+  - component: {fileID: 713682311974928559}
+  - component: {fileID: 9064469970844749842}
   m_Layer: 0
   m_Name: Pilar.053
   m_TagString: Untagged
@@ -4679,6 +5422,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000007450581, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 29
@@ -4702,10 +5446,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4730,6 +5476,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4873,6 +5620,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &713682311974928559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294789235161696022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &9064469970844749842
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294789235161696022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0, y: 0.00016357657, z: -0.014478903}
 --- !u!1 &5329912864907181393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4888,6 +5666,8 @@ GameObject:
   - component: {fileID: 318756738456036832}
   - component: {fileID: 1102623054265813054}
   - component: {fileID: 7124974376349766936}
+  - component: {fileID: 2236446413436998961}
+  - component: {fileID: 4793743040736001204}
   m_Layer: 0
   m_Name: Pilar.006
   m_TagString: Untagged
@@ -4905,6 +5685,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 5
@@ -4928,10 +5709,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4956,6 +5739,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5099,6 +5883,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2236446413436998961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329912864907181393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4793743040736001204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329912864907181393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.00603002, y: 2.238593e-16, z: 0.0039381734}
 --- !u!1 &5670268821980673235
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,6 +5929,8 @@ GameObject:
   - component: {fileID: 318756738456036762}
   - component: {fileID: 7278217617759968159}
   - component: {fileID: 5175967304249879763}
+  - component: {fileID: 8581330135767815350}
+  - component: {fileID: 545069691556503003}
   m_Layer: 0
   m_Name: Pilar.003
   m_TagString: Untagged
@@ -5131,6 +5948,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 2
@@ -5154,10 +5972,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5182,6 +6002,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036763
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5325,6 +6146,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8581330135767815350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670268821980673235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &545069691556503003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670268821980673235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0028370991, y: 1.5896397e-16, z: 0.0027965233}
 --- !u!1 &6012890015953473574
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,6 +6192,8 @@ GameObject:
   - component: {fileID: 318756738456036860}
   - component: {fileID: 6367420228481004471}
   - component: {fileID: 4027217752795322580}
+  - component: {fileID: 3360569728284181899}
+  - component: {fileID: 1783752917829844345}
   m_Layer: 0
   m_Name: Pilar.016
   m_TagString: Untagged
@@ -5357,6 +6211,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0.000000014901161}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 15
@@ -5380,10 +6235,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5408,6 +6265,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036861
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5551,6 +6409,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3360569728284181899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6012890015953473574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &1783752917829844345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6012890015953473574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0035382262, y: 0.0040643136, z: -0.010590669}
 --- !u!1 &6405787589440285449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5566,6 +6455,8 @@ GameObject:
   - component: {fileID: 318756738456036812}
   - component: {fileID: 7766623178112635074}
   - component: {fileID: 5286582548959544617}
+  - component: {fileID: 6964081302491262184}
+  - component: {fileID: 4226223983603080317}
   m_Layer: 0
   m_Name: Pilar.047
   m_TagString: Untagged
@@ -5583,6 +6474,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.000000029802322, y: 0, z: 9.313226e-10}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 23
@@ -5606,10 +6498,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5634,6 +6528,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5777,6 +6672,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6964081302491262184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405787589440285449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4226223983603080317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6405787589440285449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.005, y: 0.00008131843, z: -0.011426253}
 --- !u!1 &7064307316307442254
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,6 +6718,8 @@ GameObject:
   - component: {fileID: 318756738456036840}
   - component: {fileID: 6193237946885903253}
   - component: {fileID: 6026563488638530749}
+  - component: {fileID: 2017047326802608655}
+  - component: {fileID: 4585697881217545567}
   m_Layer: 0
   m_Name: Pilar.010
   m_TagString: Untagged
@@ -5809,6 +6737,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 9
@@ -5832,10 +6761,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5860,6 +6791,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036841
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6003,6 +6935,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2017047326802608655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064307316307442254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4585697881217545567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064307316307442254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0030539567, y: -0.00523701, z: 0.006447011}
 --- !u!1 &7164767417193208874
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,6 +6981,8 @@ GameObject:
   - component: {fileID: 318756738456036810}
   - component: {fileID: 6808240902560396223}
   - component: {fileID: 3635484007851324177}
+  - component: {fileID: 1249210252873545028}
+  - component: {fileID: 5164128181060922110}
   m_Layer: 0
   m_Name: Pilar.050
   m_TagString: Untagged
@@ -6035,6 +7000,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 26
@@ -6058,10 +7024,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6086,6 +7054,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6229,6 +7198,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1249210252873545028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164767417193208874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &5164128181060922110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164767417193208874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0013695878, y: -0.00017531915, z: -0.012526004}
 --- !u!1 &7333221129963779495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,6 +7244,8 @@ GameObject:
   - component: {fileID: 318756738456036826}
   - component: {fileID: 6477197722421443003}
   - component: {fileID: 6752975716939650170}
+  - component: {fileID: 337046919601589788}
+  - component: {fileID: 5705072860250775114}
   m_Layer: 0
   m_Name: Pilar.058
   m_TagString: Untagged
@@ -6261,6 +7263,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: -0.000000029802322}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 34
@@ -6284,10 +7287,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6312,6 +7317,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036827
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6455,6 +7461,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &337046919601589788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7333221129963779495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &5705072860250775114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7333221129963779495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.004056651, y: 0.0066079423, z: -0.016414318}
 --- !u!1 &7976301330952161731
 GameObject:
   m_ObjectHideFlags: 0
@@ -6470,6 +7507,8 @@ GameObject:
   - component: {fileID: 318756738456036822}
   - component: {fileID: 5172529662246727519}
   - component: {fileID: 8343595232032759099}
+  - component: {fileID: 5636837046133488251}
+  - component: {fileID: 8670941995758724515}
   m_Layer: 0
   m_Name: Pilar.052
   m_TagString: Untagged
@@ -6487,6 +7526,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0.000000029802322}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 28
@@ -6510,10 +7550,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6538,6 +7580,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6681,6 +7724,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5636837046133488251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7976301330952161731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &8670941995758724515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7976301330952161731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0030539567, y: -0.005155697, z: -0.013780625}
 --- !u!1 &8019855647989095172
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,6 +7770,8 @@ GameObject:
   - component: {fileID: 318756738456036842}
   - component: {fileID: 6115061089039465022}
   - component: {fileID: 6763394445546442079}
+  - component: {fileID: 7270653273639341565}
+  - component: {fileID: 4506267177093234504}
   m_Layer: 0
   m_Name: Pilar.011
   m_TagString: Untagged
@@ -6713,6 +7789,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: -0.00000011920929, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 10
@@ -6736,10 +7813,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6764,6 +7843,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6907,6 +7987,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7270653273639341565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019855647989095172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4506267177093234504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019855647989095172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.005, y: 0.0019624834, z: 0.0057586534}
 --- !u!1 &8457560531350701809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6922,6 +8033,8 @@ GameObject:
   - component: {fileID: 318756738456036808}
   - component: {fileID: 3208425642675381581}
   - component: {fileID: 8030393996223912448}
+  - component: {fileID: 3062225425223157063}
+  - component: {fileID: 4747629476041055663}
   m_Layer: 0
   m_Name: Pilar.049
   m_TagString: Untagged
@@ -6939,6 +8052,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.000000029802322, y: 0, z: 0.000000007450581}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 25
@@ -6962,10 +8076,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6990,6 +8106,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036809
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7133,6 +8250,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3062225425223157063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8457560531350701809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4747629476041055663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8457560531350701809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0002566371, y: 0.00008131657, z: -0.013094218}
 --- !u!1 &8474943335626060671
 GameObject:
   m_ObjectHideFlags: 0
@@ -7148,6 +8296,8 @@ GameObject:
   - component: {fileID: 318756738456036856}
   - component: {fileID: 2246304599797485816}
   - component: {fileID: 8193945247016767123}
+  - component: {fileID: 3167398578273167313}
+  - component: {fileID: 6849866416306096155}
   m_Layer: 0
   m_Name: Pilar.018
   m_TagString: Untagged
@@ -7165,6 +8315,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 17
@@ -7188,10 +8339,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7216,6 +8369,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036857
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7359,6 +8513,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3167398578273167313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8474943335626060671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &6849866416306096155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8474943335626060671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.003348228, y: -0.0038350092, z: 0.009203682}
 --- !u!1 &8557168171542465437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,6 +8559,8 @@ GameObject:
   - component: {fileID: 318756738456036830}
   - component: {fileID: 6839928356614969218}
   - component: {fileID: 4947533941870852463}
+  - component: {fileID: 4067580119161486438}
+  - component: {fileID: 1706158122815477232}
   m_Layer: 0
   m_Name: Pilar.056
   m_TagString: Untagged
@@ -7391,6 +8578,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0.0000000037252903}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 32
@@ -7414,10 +8602,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7442,6 +8632,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7585,6 +8776,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4067580119161486438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557168171542465437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &1706158122815477232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557168171542465437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.00603002, y: 0.00008131191, z: -0.016289461}
 --- !u!1 &8586088724475644494
 GameObject:
   m_ObjectHideFlags: 0
@@ -7600,6 +8822,8 @@ GameObject:
   - component: {fileID: 318756738456036862}
   - component: {fileID: 5488189039963204511}
   - component: {fileID: 4942239130535266699}
+  - component: {fileID: 5463342086977915449}
+  - component: {fileID: 4100853074247137926}
   m_Layer: 0
   m_Name: Pilar.017
   m_TagString: Untagged
@@ -7617,6 +8841,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 16
@@ -7640,10 +8865,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7668,6 +8895,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7811,6 +9039,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5463342086977915449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8586088724475644494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &4100853074247137926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8586088724475644494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.005, y: 0.004999999, z: 0.009838784}
 --- !u!1 &8596701566300355584
 GameObject:
   m_ObjectHideFlags: 0
@@ -7838,6 +9097,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6075920871056058936}
   - {fileID: 8372781654450913720}
@@ -7992,6 +9252,8 @@ GameObject:
   - component: {fileID: 318756738456036814}
   - component: {fileID: 2986194517190012234}
   - component: {fileID: 4543093250931457090}
+  - component: {fileID: 2186893852924282850}
+  - component: {fileID: 8160875664787425905}
   m_Layer: 0
   m_Name: Pilar.048
   m_TagString: Untagged
@@ -8009,6 +9271,7 @@ Transform:
   m_LocalRotation: {x: 0.7071069, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 24
@@ -8032,10 +9295,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8060,6 +9325,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036815
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8203,6 +9469,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2186893852924282850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8608301921070061338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &8160875664787425905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8608301921070061338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0023059016, y: 0.00032443693, z: -0.011736156}
 --- !u!1 &8617897210061506304
 GameObject:
   m_ObjectHideFlags: 0
@@ -8218,6 +9515,8 @@ GameObject:
   - component: {fileID: 318756738456036834}
   - component: {fileID: 1014922102788024394}
   - component: {fileID: 46433318313407929}
+  - component: {fileID: 147208430044635678}
+  - component: {fileID: 1738081045727568714}
   m_Layer: 0
   m_Name: Pilar.007
   m_TagString: Untagged
@@ -8235,6 +9534,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 6
@@ -8258,10 +9558,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8286,6 +9588,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036835
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8429,6 +9732,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &147208430044635678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617897210061506304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &1738081045727568714
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8617897210061506304}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.00007364713, y: -0.0019738532, z: 0.0046587503}
 --- !u!1 &8790805118757304052
 GameObject:
   m_ObjectHideFlags: 0
@@ -8444,6 +9778,8 @@ GameObject:
   - component: {fileID: 318756738456036844}
   - component: {fileID: 1628491240204996786}
   - component: {fileID: 443117338485374806}
+  - component: {fileID: 5781608807455036408}
+  - component: {fileID: 7873218355339423521}
   m_Layer: 0
   m_Name: Pilar.008
   m_TagString: Untagged
@@ -8461,6 +9797,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 7
@@ -8484,10 +9821,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8512,6 +9851,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8655,6 +9995,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5781608807455036408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8790805118757304052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &7873218355339423521
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8790805118757304052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: -0.0035269412, y: 0.0047303317, z: 0.004402353}
 --- !u!1 &8814145573885195536
 GameObject:
   m_ObjectHideFlags: 0
@@ -8670,6 +10041,8 @@ GameObject:
   - component: {fileID: 318756738456036838}
   - component: {fileID: 4959731256424576042}
   - component: {fileID: 7115216280532472882}
+  - component: {fileID: 2542885821612190677}
+  - component: {fileID: 7929491423672442415}
   m_Layer: 0
   m_Name: Pilar.005
   m_TagString: Untagged
@@ -8687,6 +10060,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 51.41319, y: 51.41319, z: 315.1694}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4690155268845506067}
   m_RootOrder: 4
@@ -8710,10 +10084,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8738,6 +10114,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &318756738456036839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8881,3 +10258,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2542885821612190677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814145573885195536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
+--- !u!65 &7929491423672442415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814145573885195536}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.03, z: 0.005}
+  m_Center: {x: 0.0084030535, y: -0.008238865, z: 0.0048628207}

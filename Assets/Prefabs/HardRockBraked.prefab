@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3127169021106848172}
   - component: {fileID: 3127169021106848173}
   - component: {fileID: 3127169021106848165}
+  - component: {fileID: 1468891307941295048}
+  - component: {fileID: 5026376345908165919}
   m_Layer: 13
   m_Name: Icosphere.000
   m_TagString: Untagged
@@ -32,6 +34,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7935161577097374303}
   m_RootOrder: 0
@@ -55,10 +58,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -83,6 +88,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3127169021106848175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -226,6 +232,37 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0dd9a7ce172ee6d46965ccf62aefee6e, type: 3}
   - {fileID: 8300000, guid: 99c296505c29cdb45be2846e40369e71, type: 3}
   - {fileID: 8300000, guid: f3cf3ef7ca3e1b84eb4e8f7cc7aac519, type: 3}
+--- !u!65 &1468891307941295048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035742382926625041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013365326, y: 0.020171436, z: 0.016352493}
+  m_Center: {x: -0.0059461705, y: -0.0019122266, z: 0.015767992}
+--- !u!114 &5026376345908165919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035742382926625041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
 --- !u!1 &3374969905185919347
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,6 +278,8 @@ GameObject:
   - component: {fileID: 3127169021106848095}
   - component: {fileID: 3127169021106848092}
   - component: {fileID: 3127169021106848174}
+  - component: {fileID: 5052401428339164285}
+  - component: {fileID: 775626477001757141}
   m_Layer: 13
   m_Name: Icosphere.006
   m_TagString: Untagged
@@ -258,6 +297,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7935161577097374303}
   m_RootOrder: 5
@@ -281,10 +321,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -309,6 +351,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3127169021106848094
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -452,6 +495,37 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0dd9a7ce172ee6d46965ccf62aefee6e, type: 3}
   - {fileID: 8300000, guid: 99c296505c29cdb45be2846e40369e71, type: 3}
   - {fileID: 8300000, guid: f3cf3ef7ca3e1b84eb4e8f7cc7aac519, type: 3}
+--- !u!65 &5052401428339164285
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374969905185919347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02495066, y: 0.018391114, z: 0.018480422}
+  m_Center: {x: 0.0015167599, y: 0.0033571501, z: 0.011763458}
+--- !u!114 &775626477001757141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374969905185919347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
 --- !u!1 &3590266563416079458
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +541,8 @@ GameObject:
   - component: {fileID: 3127169021106848085}
   - component: {fileID: 3127169021106848090}
   - component: {fileID: 3127169021106848168}
+  - component: {fileID: 3695927610627748042}
+  - component: {fileID: 8013783284301999688}
   m_Layer: 13
   m_Name: Icosphere.004
   m_TagString: Untagged
@@ -484,6 +560,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7935161577097374303}
   m_RootOrder: 3
@@ -507,10 +584,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -535,6 +614,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3127169021106848084
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -678,6 +758,37 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0dd9a7ce172ee6d46965ccf62aefee6e, type: 3}
   - {fileID: 8300000, guid: 99c296505c29cdb45be2846e40369e71, type: 3}
   - {fileID: 8300000, guid: f3cf3ef7ca3e1b84eb4e8f7cc7aac519, type: 3}
+--- !u!65 &3695927610627748042
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3590266563416079458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027543789, y: 0.028856521, z: 0.0147913955}
+  m_Center: {x: 0.00030165352, y: -0.0021877699, z: 0.007278852}
+--- !u!114 &8013783284301999688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3590266563416079458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
 --- !u!1 &6360211535429720140
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +816,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.08, y: 0, z: -5.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5189307489878252658}
   - {fileID: 6372915417196643626}
@@ -826,6 +938,8 @@ GameObject:
   - component: {fileID: 3127169021106848086}
   - component: {fileID: 3127169021106848087}
   - component: {fileID: 3127169021106848171}
+  - component: {fileID: 6540980650746798620}
+  - component: {fileID: 6991380339561735834}
   m_Layer: 13
   m_Name: Icosphere.003
   m_TagString: Untagged
@@ -843,6 +957,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7935161577097374303}
   m_RootOrder: 2
@@ -866,10 +981,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -894,6 +1011,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3127169021106848081
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1037,6 +1155,37 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0dd9a7ce172ee6d46965ccf62aefee6e, type: 3}
   - {fileID: 8300000, guid: 99c296505c29cdb45be2846e40369e71, type: 3}
   - {fileID: 8300000, guid: f3cf3ef7ca3e1b84eb4e8f7cc7aac519, type: 3}
+--- !u!65 &6540980650746798620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6753303062305697308}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01825103, y: 0.022846922, z: 0.018789116}
+  m_Center: {x: 0.003376372, y: 0.0005849664, z: 0.015035027}
+--- !u!114 &6991380339561735834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6753303062305697308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
 --- !u!1 &6851168188996474717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,6 +1201,8 @@ GameObject:
   - component: {fileID: 3127169021106848088}
   - component: {fileID: 3127169021106848089}
   - component: {fileID: 3127169021106848169}
+  - component: {fileID: 1185189244426273990}
+  - component: {fileID: 8999891412183215742}
   m_Layer: 13
   m_Name: Icosphere.005
   m_TagString: Untagged
@@ -1069,6 +1220,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7935161577097374303}
   m_RootOrder: 4
@@ -1092,10 +1244,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1120,6 +1274,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3127169021106848091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1263,6 +1418,37 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0dd9a7ce172ee6d46965ccf62aefee6e, type: 3}
   - {fileID: 8300000, guid: 99c296505c29cdb45be2846e40369e71, type: 3}
   - {fileID: 8300000, guid: f3cf3ef7ca3e1b84eb4e8f7cc7aac519, type: 3}
+--- !u!65 &1185189244426273990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851168188996474717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.014927881, y: 0.015103299, z: 0.019524992}
+  m_Center: {x: 0.005989208, y: -0.0073928367, z: 0.0143214995}
+--- !u!114 &8999891412183215742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6851168188996474717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1
 --- !u!1 &9004103151317089661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1464,8 @@ GameObject:
   - component: {fileID: 3127169021106848083}
   - component: {fileID: 3127169021106848080}
   - component: {fileID: 3127169021106848170}
+  - component: {fileID: 5939523550904998103}
+  - component: {fileID: 5983070414706688110}
   m_Layer: 13
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -1295,6 +1483,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7935161577097374303}
   m_RootOrder: 1
@@ -1318,10 +1507,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1346,6 +1537,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3127169021106848082
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1489,3 +1681,34 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0dd9a7ce172ee6d46965ccf62aefee6e, type: 3}
   - {fileID: 8300000, guid: 99c296505c29cdb45be2846e40369e71, type: 3}
   - {fileID: 8300000, guid: f3cf3ef7ca3e1b84eb4e8f7cc7aac519, type: 3}
+--- !u!65 &5939523550904998103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004103151317089661}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010140996, y: 0.009333702, z: 0.010219358}
+  m_Center: {x: 0.0009459893, y: -0.009515121, z: 0.015663136}
+--- !u!114 &5983070414706688110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004103151317089661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537ed7779c3855648b86f019ffdb21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intercationUi: {fileID: 0}
+  startText: Pick up
+  actionDescription: Picking up {x}
+  interactionLock: 2
+  pickUpItem: 1
+  destroyOnPickup: 1

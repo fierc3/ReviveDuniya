@@ -40,8 +40,8 @@ public class CarInteractable : MonoBehaviour, PlayerInteractable
     // Start is called before the first frame update
     void Start()
     {
-        startText = $"<{InputManager.interaceKeyboard.ToString()}> {startText}";
-        exitText = $"<{InputManager.interaceKeyboard.ToString()}> {exitText}";
+        startText = $"<{InputManager.interactKeyboard.ToString()}> {startText}";
+        exitText = $"<{InputManager.interactKeyboard.ToString()}> {exitText}";
         interactionBox = GetComponent<BoxCollider>();
         carController = GetComponentInParent<CarController>();
         seatTarget = GetComponentInChildren<BoxCollider>();
