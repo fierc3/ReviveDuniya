@@ -27,6 +27,7 @@ public class ObjectivesUpdater : MonoBehaviour
             Collect Water [water] / [watermax]
             Build farm!
          */
+        objectivesText = GetComponent<Text>();
         objectivesText.text = template.Replace("[stone]", items.Where(x => x == InventoryItem.Cobble).Count() + "")
         .Replace("[wood]", items.Where(x => x == InventoryItem.Wood).Count() + "")
         .Replace("[water]", items.Where(x => x == InventoryItem.Water).Count() + "")
