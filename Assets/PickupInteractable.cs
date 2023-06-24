@@ -93,7 +93,6 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
 
         if (other.gameObject.tag == "Player" && !isInInteraction)
         {
-            Debug.Log("pum2 EXIT TRIGGERED");
             playerInRange = false;
             intercationUi.SetActive(false);
         }
@@ -101,8 +100,6 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
 
     public void FinishInteraction()
     {
-        Debug.Log("pum2 FINISH TRIGGERED");
-
         Inventory.Instance.AddItem(pickUpItem);
         intercationUi.SetActive(false);
         playerControllerObject.GetComponent<PlayerController>().enabled = true;

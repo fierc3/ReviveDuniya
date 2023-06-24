@@ -51,7 +51,6 @@ public class BossLifeBarScript : MonoBehaviour
 
     public void UpdateLife(float amount)
     {
-        Debug.Log("pum2 aaa " + life);
         if (IsDead()) return; // nao faz nada caso esteja morto
 
         if (amount < 0) // caso esteja decrementando a vida
@@ -63,8 +62,6 @@ public class BossLifeBarScript : MonoBehaviour
 
         if (life > maxLife) life = maxLife; // garante que ela nao seja maior que o permitido
         if (life < 0) life = 0;// garante que ela nao seja menor que o permitido
-
-        Debug.Log("pum2 b " + life);
 
         if (life == 0 && !IsDead()) // mata o boss caso ainda nao tenha feito
         {

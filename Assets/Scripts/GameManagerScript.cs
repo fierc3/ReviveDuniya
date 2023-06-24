@@ -116,7 +116,8 @@ public class GameManagerScript : MonoBehaviour
 
         if (InputManager.GetPauseInput() && !restarting)
         {
-            PauseManager();
+
+            //PauseManager();
         }
 
         if (gameIsPaused && PlayerPrefs.GetInt("IsMusicOn") == 1)

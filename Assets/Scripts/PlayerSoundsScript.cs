@@ -100,7 +100,7 @@ public class PlayerSoundsScript : MonoBehaviour
 
     public void LightBonFire()
     {
-        bonfireLit.SetActive(true);
+        //bonfireLit.SetActive(true);
     }
 
     private void CreateAndPlay(AudioClip clip, float destructionTime, float volume = 1f)

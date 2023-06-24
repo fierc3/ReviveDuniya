@@ -7,13 +7,16 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class Inventory : MonoBehaviour
+    public class Inventory  
     {
 
         public static event Action<List<InventoryItem>> OnInventoryChange = delegate { };
 
         private static List<InventoryItem> inventoryList = new List<InventoryItem>();
         private static object lockObject = new object();
+
+        private static List<int> emissions = new List<int>();
+        private static List<int> susActions = new List<int>();
 
         private static Inventory instance;
 
@@ -79,6 +82,10 @@ namespace Assets.Scripts
             }
         }
 
+        public void AddSusActions(int deduction) => susActions.Add(deduction);
+        public List<int> GetSusActions() => susActions;
+        public void AddEmissions(int deduction) => emissions.Add(deduction);
+        public List<int> GetEmissions() => emissions;
         // Other methods or properties
 
         public int Count

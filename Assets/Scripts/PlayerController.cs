@@ -214,7 +214,7 @@ private void Move()
                     //model.position += movementDirection * moveSpeed * Time.deltaTime;
                     RaycastHit floorHit;
                     var originPos = model.transform.position;
-                    originPos.y += 20f;
+                    originPos.y += 3f;
                     if (Physics.Raycast(originPos, Vector3.down, out floorHit, 10f, groundLayer))
                     {
                         var pos = model.position;

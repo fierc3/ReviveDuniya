@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System;
 using UnityEngine;
 
@@ -170,6 +171,38 @@ namespace UnityStandardAssets.Vehicles.Car
             AddDownForce();
             CheckForWheelSpin();
             TractionControl();
+        }
+
+
+        bool startTrackingEmission = false;
+        private float timer = 0f;
+        private float interval = 3f;
+
+        private void OnEnable()
+        {
+            startTrackingEmission = true;
+            timer = 0f;
+        }
+
+        private void OnDisable()
+        {
+            startTrackingEmission = false;
+            timer = 0f;
+        }
+
+        private void Update()
+        {
+
+            if (!startTrackingEmission) return;
+
+            timer += Time.deltaTime;
+
+            if (timer >= interval)
+            {
+                Inventory.Instance.AddEmissions(1);
+                Debug.Log("adding emission, we should pop up this sometime in the future");
+                timer = 0f; // Reset the timer
+            }
         }
 
 

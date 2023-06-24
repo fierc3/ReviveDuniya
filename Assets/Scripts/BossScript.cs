@@ -117,7 +117,6 @@ public class BossScript : MonoBehaviour
         bossLifeScript.UpdateLife(-1.5f);
         return;
 
-        Debug.Log("pum2 aab" + currentHit);
         if (currentHit == 0 && hit == 4) // hit unico do ataque duplo
         {
             hitCounterText.text = "1 Hit";

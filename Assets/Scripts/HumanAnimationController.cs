@@ -38,6 +38,10 @@ public class HumanAnimationController : MonoBehaviour
         animator.SetTrigger("PickingUp");
     }
 
+    public void DoFinish() {
+        animator.SetTrigger("LightBonfire");
+    }
+
 
     public void DoDodge()
     {

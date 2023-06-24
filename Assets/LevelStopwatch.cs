@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +25,7 @@ public class LevelStopwatch : MonoBehaviour
         initialPlayerPosition = player.transform.position;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
 
         if (isRunning)
