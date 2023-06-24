@@ -57,6 +57,7 @@ public class Encounter : MonoBehaviour
             if(enemies.Where(x => x != null).Count() < 1){
                 encounterFinished = true;
                 walls.SetActive(false);
+                intercationUi.SetActive(false);
             }
         }
 
