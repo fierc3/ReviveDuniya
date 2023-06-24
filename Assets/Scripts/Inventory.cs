@@ -42,6 +42,11 @@ namespace Assets.Scripts
             }
         }
 
+        public void Clear()
+        {
+            instance = null;
+        }
+
 
         public  void AddItem(InventoryItem item)
         {

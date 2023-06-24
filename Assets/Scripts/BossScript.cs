@@ -186,10 +186,11 @@ public class BossScript : MonoBehaviour
 
     IEnumerator ShowHitCounter()
     {
+        
         HitManager(); // Seta o texto correto
-        hitCounterParent.SetActive(true); // exibe o texto
+       // hitCounterParent.SetActive(true); // exibe o texto
         yield return new WaitForSeconds(2);
-        hitCounterParent.SetActive(false);
+        //hitCounterParent.SetActive(false);
     }
 
     private void CreateAndPlay(AudioClip clip, float destructionTime, float volume = 1f) // toca um som e o destroi deopis de x segundos

@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using System.Runtime.InteropServices;
 using System;
+using Assets.Scripts;
 
 [DefaultExecutionOrder(0)]
 public class GameManagerScript : MonoBehaviour
@@ -274,6 +275,7 @@ public class GameManagerScript : MonoBehaviour
             transitionFade.alpha += 0.05f;
             yield return new WaitForSeconds(0.1f);
         }
+        Inventory.Instance.Clear();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

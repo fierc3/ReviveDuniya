@@ -8,7 +8,9 @@ using UnityEngine.UI;
 
 public class LifeBarScript : MonoBehaviour
 {
+    [SerializeField]
     private float life = 10; // total de vida
+    [SerializeField]
     private float ghost = 10; // total de vida
 
     public Image lifeBar; // barra de vida verdadeira

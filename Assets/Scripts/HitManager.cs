@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class HitManager : StateMachineBehaviour
 {
-    private GameObject boss;
     public int hit;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        boss = GameObject.FindGameObjectWithTag("Boss").transform.parent.gameObject;
-        if(boss != null)
+        Debug.Log("pumx");
+        var bosses = GameObject.FindGameObjectsWithTag("Boss");
+
+        foreach(var bossesObj in bosses)
         {
+            var boss = bossesObj.transform.parent.gameObject;
             boss.GetComponent<BossScript>().SwordHit(hit);
         }
     }

@@ -198,64 +198,31 @@ public class BossAttacks : MonoBehaviour
         int rand = 0;
         do
         {
-            if (!anim.GetBool("Phase2")) rand = Random.Range(0, 10);
-            if (anim.GetBool("Phase2")) rand = Random.Range(0, 13);
+           rand = Random.Range(1,5);
         } while (rand == lastAttack);
         lastAttack = rand;
 
         switch (rand)
         {
-            case 0:
-                anim.SetTrigger("DoubleDash");
-                brainDebug.text = "Double Dash";
-                break;
             case 1:
-                anim.SetTrigger("Dash");
-                brainDebug.text = "Dash";
-                break;
-            case 2:
                 anim.SetTrigger("SpinAttack");
                 brainDebug.text = "Spin Attack";
                 break;
-            case 3:
+            case 2:
                 anim.SetTrigger("Combo");
                 brainDebug.text = "Combo";
                 break;
-            case 4:
-                anim.SetTrigger("Casting");
-                brainDebug.text = "Casting";
-                break;
-            case 5:
+            case 3:
                 anim.SetTrigger("Combo1");
                 brainDebug.text = "Combo1";
                 break;
-            case 6:
-                anim.SetTrigger("Spell");
-                brainDebug.text = "Spell";
-                break;
-            case 7:
-                anim.SetTrigger("AuraCast");
-                brainDebug.text = "Aura Cast";
-                break;
-            case 8:
+            case 4:
                 anim.SetTrigger("ForwardAttack");
                 brainDebug.text = "ForwardAttack";
                 break;
-            case 9:
-                anim.SetTrigger("Scream");
-                brainDebug.text = "Scream";
-                break;
-            case 10:
-                anim.SetTrigger("Impact");
-                brainDebug.text = "Impact";
-                break;
-            case 11:
+            case 5:
                 anim.SetTrigger("Strong");
                 brainDebug.text = "Strong";
-                break;
-            case 12:
-                anim.SetTrigger("JumpAttack");
-                brainDebug.text = "Jump Attack";
                 break;
             default:
                 break;
@@ -279,11 +246,12 @@ public class BossAttacks : MonoBehaviour
             }
             else if (actionAfterSlowDown == "FarAttack")
             {
-                action = "FarAttack";
+                action = "Move";
             }
             else
             {
-                Debug.LogError("Not supposed to be here");
+                action = "Move";
+                //Debug.LogError("Not supposed to be here");
             }
         }
         else
@@ -346,7 +314,7 @@ public class BossAttacks : MonoBehaviour
             //anim.SetFloat("Vertical", 0);
             //action = "FarAttack";
 
-            actionAfterSlowDown = "FarAttack";
+            actionAfterSlowDown = "Move";
             slowDown = true;
         }
         else
@@ -369,21 +337,12 @@ public class BossAttacks : MonoBehaviour
 
         if((distance > farValue && Time.time - lastActionTime > chillTime) && !phase2) // caso se afastou do jogador, executa um ataque de longe
         {
-            FarAttack();
+            //FarAttack();
         } else
 
         if ((Time.time - lastActionTime > chillTime) || phase2 && Time.time - lastActionTime > chillTime)
         {
-            int rand = Random.Range(0, 3);
-
-            if (rand % 2 == 0)
-            {
-                NearAttack();
-            }
-            else if (rand % 2 == 1)
-            {
-                FarAttack();
-            }
+            NearAttack();
         }
 
     }
