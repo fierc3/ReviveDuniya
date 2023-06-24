@@ -80,7 +80,7 @@ public class BossAttacks : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Keypad0) && gameManager.master) AI = !AI;
         if (Input.GetKeyDown(KeyCode.Keypad1) && gameManager.master) debug = true;
-        brainIcon.gameObject.SetActive(AI); // icone que indica se a AI esta ativada ou nao
+        //brainIcon.gameObject.SetActive(AI); // icone que indica se a AI esta ativada ou nao
 
         distance = Vector3.Distance(model.transform.position, player.transform.position); // distancia do boss para o player
 
