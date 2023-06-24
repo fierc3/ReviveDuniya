@@ -167,7 +167,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
             // start the clip from a random point
             source.time = Random.Range(0f, clip.length);
-            source.Play();
+            //source.Play();
             source.minDistance = 5;
             source.maxDistance = maxRolloffDistance;
             source.dopplerLevel = 0;

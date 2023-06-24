@@ -25,6 +25,9 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
     [SerializeField]
     bool destroyOnPickup = true;
 
+    [SerializeField]
+    int susDeduction = 0;
+
     private bool playerInRange = false;
     private bool isInInteraction = false;
     private GameObject playerCollider;
@@ -32,6 +35,8 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
     private HumanAnimationController humanAnim;
     private GameObject holdPos;
     private bool isHeld = false;
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -110,7 +115,11 @@ public class PickupInteractable : MonoBehaviour, PlayerInteractable
             this.gameObject.SetActive(false);
         }
         isHeld = false;
-
+        if(susDeduction > 0)
+        {
+            Inventory.Instance.AddSusActions(susDeduction);
+        }
+        
     }
 
     public void StartIntercation()

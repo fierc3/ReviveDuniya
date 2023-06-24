@@ -2,6 +2,7 @@ using Assets;
 using Assets.Scripts;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BuildInteractable : MonoBehaviour, PlayerInteractable
@@ -86,6 +87,7 @@ public class BuildInteractable : MonoBehaviour, PlayerInteractable
         if (InputManager.GetInteract() && playerInRange && isInInteraction)
         {
             Debug.Log("GO TO MAIN MENU");
+            SceneManager.LoadScene("Menu");
         }
 
 
