@@ -30349,12 +30349,8 @@ MonoBehaviour:
   player: {fileID: 0}
   playerController: {fileID: 0}
   takeDamageSound:
-  - {fileID: 8300000, guid: 3fc52f1df2ed83a4296098c98d830287, type: 3}
-  - {fileID: 8300000, guid: 466eb92d8b1938946b70cbf6be83f5df, type: 3}
-  - {fileID: 8300000, guid: 87a3e057eb184e645979bb6a22e5c5d6, type: 3}
-  - {fileID: 8300000, guid: aa5605e04ce4a3244b9b55cf0da8a6a3, type: 3}
-  - {fileID: 8300000, guid: f0a01782f0a07d24d89d129fee3f7a26, type: 3}
-  - {fileID: 8300000, guid: ae00621d95df7d34e9b3a4f9b4d4729b, type: 3}
+  - {fileID: 8300000, guid: ea7fb2803e87e5a4fb1d664ef54283ab, type: 3}
+  - {fileID: 8300000, guid: 8a2b77eaf29e0014dbf46a9f69c0a3b8, type: 3}
   bossLifeScript: {fileID: 5992362053633825145}
   hitCounterParent: {fileID: 0}
   bloodPrefab: {fileID: 1000012909287652, guid: abb9f519b142e304d9c45b56afa768bc,
@@ -60393,19 +60389,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313829d5ed6b6ab4ca1eaf243268999d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swordSwing: {fileID: 8300000, guid: b831dbfda604d624aa359dde432323ab, type: 3}
-  fastSwing: {fileID: 8300000, guid: d3f1b6c494c9392468daa5ceff6b04a0, type: 3}
-  longSwordSwing: {fileID: 8300000, guid: b27e9ce7f3da03e4b850f6737eddd10a, type: 3}
-  reachGreatSword: {fileID: 8300000, guid: 4ee79314b84bcb74e8582a6e75d51b08, type: 3}
-  killed: {fileID: 8300000, guid: feaa9da474b6ee64ea34962f365090e5, type: 3}
+  swordSwing: {fileID: 8300000, guid: bdc9f9665badfa04a885bf7e37d19dd7, type: 3}
+  fastSwing: {fileID: 8300000, guid: 0347420e9d762b549a936577d679a3e6, type: 3}
+  longSwordSwing: {fileID: 8300000, guid: cd036ac1ca8f8ca42ab4b34c5adf9280, type: 3}
+  reachGreatSword: {fileID: 8300000, guid: 8250afe39085a5d49a8e60f0b2c63217, type: 3}
+  killed: {fileID: 8300000, guid: bd95f30a0f390d34e91921e50412300e, type: 3}
   transposing: {fileID: 8300000, guid: 434040aff1534c7418a4b5922907e753, type: 3}
-  preImpact: {fileID: 8300000, guid: 52c6f39d7fed8c242be59943d35df37c, type: 3}
-  impact: {fileID: 8300000, guid: ac4c28a72ae9b964e99ac939087c8945, type: 3}
+  preImpact: {fileID: 8300000, guid: 92cad07d56335924290e7b94a3de60e1, type: 3}
+  impact: {fileID: 8300000, guid: 92cad07d56335924290e7b94a3de60e1, type: 3}
   scream: {fileID: 8300000, guid: 471d20fbfd2450f4cb22ae5d5ef4c7cb, type: 3}
   takeDamage:
-  - {fileID: 8300000, guid: b2fba22710038ca488a46edb0f1f10bf, type: 3}
-  - {fileID: 8300000, guid: ff3aa1ba4d99e60498a85b56dc8fd04c, type: 3}
-  - {fileID: 8300000, guid: c307fe0120e083344a88b34ddd556a2f, type: 3}
+  - {fileID: 8300000, guid: bd95f30a0f390d34e91921e50412300e, type: 3}
+  - {fileID: 8300000, guid: 96ebcbb49083da346b4e59e7bfb3793a, type: 3}
   footStep:
   - {fileID: 8300000, guid: 4b9fc5321cec5034abea6c38a62e1c24, type: 3}
   greatSwordHit:
