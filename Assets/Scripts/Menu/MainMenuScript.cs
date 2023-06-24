@@ -26,6 +26,7 @@ public class MainMenuScript : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = true;
         GetReferences();
         SetObjects();
         if(Camera.main.aspect > 2) // canvas para o ultra-wide
