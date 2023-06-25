@@ -6,7 +6,6 @@ using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Vehicles.Car;
-using static UnityEditor.PlayerSettings;
 
 public class CarInteractable : MonoBehaviour, PlayerInteractable
 {

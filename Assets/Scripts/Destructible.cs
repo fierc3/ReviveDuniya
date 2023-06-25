@@ -13,7 +13,7 @@ public class Destructible : MonoBehaviour
 
     public void Start()
     {
-        animController = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<HumanAnimationController>();
+        animController = GameObject.FindGameObjectWithTag("PlayerController").GetComponent<HumanAnimationController>(); 
     }
 
     private void OnTriggerEnter(Collider other)

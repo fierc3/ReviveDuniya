@@ -40,6 +40,7 @@ public class MainMenuScript : MonoBehaviour
 
     private void Update()
     {
+        Cursor.visible = true;
         if (!pressedAnyBtn && pressAnyButton.activeSelf)
         {
             foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode)))
