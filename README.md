@@ -9,4 +9,11 @@ All assets used on this project are free to use.
 
 Trailer: tba
 
-Demo: tba
+Demo: [WEBGL](https://problemsome.itch.io/revive-duniya-demo-offline)
+Password: reviveduniyatester
+
+## AI Tools used
+- CONVAI - AI systems that can engage in natural and meaningful conversations with humans
+- POSEIFY / Rokoko - Motion capture by video
+- Copilot - More efficient development
+- SOUNDRAW - AI supported music creation
